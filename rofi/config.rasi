@@ -1,0 +1,50 @@
+configuration {
+    modi: "drun";
+    show-icons: false;
+    display-drun: "apps";
+    drun-display-format: "{name}";
+    font: "JetBrainsMono Nerd Font 12";
+}
+
+mainbox {
+    background-color: transparent;
+}
+
+inputbar {
+    background-color: #1a1a1a;
+    text-color: #ffffff;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+listview {
+    lines: 6;
+    spacing: 6px;
+}
+
+element {
+    background-color: transparent;
+    text-color: #0f0f0f;
+}
+
+* {
+    background: #0f0f0f;
+    foreground: #ffffff;
+    accent: #ff0033;
+}
+
+window {
+    background-color: #0f0f0f;
+    border: 2px;
+    border-color: @accent;
+    border-radius: 12px;
+}
+
+element selected {
+    background-color: @accent;
+    text-color: #000000;
+}
+drun {
+    show-actions: false;
+    display-name: false;
+}

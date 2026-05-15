@@ -1,0 +1,17 @@
+* {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 12px;
+}
+
+#waybar {
+  background: rgba(0, 0, 0, 0.4); /* прозрачность */
+  border-radius: 12px;
+  padding: 0 15px;
+  margin: 12px 12px 0 12px;
+  color: #ffffff;
+}
+
+#custom-brightness, #custom-volume,#clock, #memory, #cpu {
+  /* просто цвет и отступы можно */
+  padding: 0 8px;
+}
