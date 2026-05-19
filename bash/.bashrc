@@ -4,7 +4,6 @@ source /usr/share/git/completion/git-prompt.sh
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
-# Application aliases with nohup
 alias st='nohup steam > /dev/null 2>&1 &'
 alias ff='nohup firefox > /dev/null 2>&1 &'
 alias tg='nohup Telegram > /dev/null 2>&1 &'
