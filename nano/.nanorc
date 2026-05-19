@@ -1,2 +1,7 @@
 set nohelp
-set noconstantshow
+set titlecolor white,black
+set statuscolor white,black
+set autoindent
+set tabsize 4
+set softwrap
+set positionlog
