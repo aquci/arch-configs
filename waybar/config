@@ -5,25 +5,15 @@
 "margin": 0,
 "width": 1900,
 
-"modules-left": ["custom/brightness", "custom/volume"],
+"modules-left": ["pulseaudio"],
 "modules-center": ["clock"],
 "modules-right": ["memory", "cpu"],
-
-"custom/brightness": {
-    "exec": "~/.config/waybar/scripts/get-brightness.sh",
-    "interval": 2,
-    "format": "☀ {}%",
-    "on-scroll-up": "~/.config/waybar/scripts/set-brightness.sh 15",
-    "on-scroll-down": "~/.config/waybar/scripts/set-brightness-down.sh 15"
 },
 
-"custom/volume": {
-  "exec": "pactl get-sink-volume alsa_output.pci-0000_01_00.1.hdmi-stereo | grep -Po '[0-9]+%' | head -1",
-  "interval": 2,
-  "format": "♫ {}",
-  "on-scroll-up": "pactl set-sink-volume alsa_output.pci-0000_01_00.1.hdmi-stereo +5%",
-  "on-scroll-down": "pactl set-sink-volume alsa_output.pci-0000_01_00.1.hdmi-stereo -5%",
-  "on-click": "pactl set-sink-mute alsa_output.pci-0000_01_00.1.hdmi-stereo toggle"
+"pulseaudio": {
+    "format": "♫ {volume}%",
+    "scroll-step": 5,
+    "on-click": "pactl set-sink-mute alsa_output.pci-0000_01_00.1.hdmi-stereo toggle"
 },
 
 "clock": {
@@ -31,7 +21,7 @@
 },
 
 "memory": {
-"format": "{used} GB"
+    "format": "{used:0.1f}G"
 },
 
 "cpu": {
