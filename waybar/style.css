@@ -1,7 +1,7 @@
 * {
-    font-family: "JetBrainsMono Nerd Font";
+    font-family: "Cozette";
     font-size: 13px;
-    min-height: 0;
+    font-weight: normal;
 }
 
 window#waybar {
@@ -16,8 +16,8 @@ window#waybar {
 #clock,
 #memory,
 #cpu {
-    background: rgba(0, 0, 0, 0.4);
-    border-radius: 12px;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 0px;
 
     padding: 2px 12px;
     margin: 2px 6px;

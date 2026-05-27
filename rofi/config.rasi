@@ -1,7 +1,6 @@
 configuration {
     modi: "drun";
     show-icons: false;
-    display-drun: "apps";
     drun-display-format: "{name}";
     font: "JetBrainsMono Nerd Font 12";
 }
@@ -28,16 +27,20 @@ element {
 }
 
 * {
-    background: #0f0f0f;
+    background: #0b0b0b;
     foreground: #ffffff;
-    accent: #ff0033;
+    accent: #809dbd;
 }
 
 window {
-    background-color: #0f0f0f;
+    width: 30%;
+    location: center;
+    anchor: center;
+
     border: 2px;
-    border-color: @accent;
-    border-radius: 12px;
+    border-color: #382f4e;
+
+    border-radius: 0px;
 }
 
 element selected {
@@ -47,4 +50,25 @@ element selected {
 drun {
     show-actions: false;
     display-name: false;
+}
+
+@theme "/usr/share/rofi/themes/material.rasi"
+element-icon {
+    enabled: false;
+    size: 0px;
+}
+
+listview {
+    columns: 1;
+    lines: 8;
+}
+
+element-text {
+    vertical-align: 0.5;
+}
+inputbar {
+    children: [ entry ];
+}
+mode-switcher {
+    enabled: false;
 }
