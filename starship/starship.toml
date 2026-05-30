@@ -1,0 +1,15 @@
+add_newline = true
+
+format = """
+[󰣇 ](#809dbd)$directory
+$character
+"""
+
+[directory]
+style = "#809dbd"
+truncation_length = 3
+truncate_to_repo = false
+
+[character]
+success_symbol = "[❯](#606988)"
+error_symbol = "[❯](red)"
