@@ -48,6 +48,7 @@
    kitty
    rofi
    nemo
+   nvim
    git
    nano
    wget
