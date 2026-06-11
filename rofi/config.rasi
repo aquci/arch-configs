@@ -52,7 +52,7 @@ drun {
     display-name: false;
 }
 
-@theme "/usr/share/rofi/themes/material.rasi"
+//@theme "/usr/share/rofi/themes/material.rasi"
 element-icon {
     enabled: false;
     size: 0px;
@@ -72,3 +72,5 @@ inputbar {
 mode-switcher {
     enabled: false;
 }
+
+@theme "/nix/store/f6jj0h6nn40cv8hq7ksgikx04vayxjlw-rofi-2.0.0/share/rofi/themes/material.rasi"
