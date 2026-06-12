@@ -30,6 +30,7 @@
    modesetting.enable = true;
    open = false;
    nvidiaSettings = true;
+   powerManagement.enable = true;
   };
 
   programs.hyprland = {
@@ -41,7 +42,7 @@
 
   programs.steam = {
    enable = true;
-   remotePlay.openFirewall = true; 
+   remotePlay.openFirewall = true;
   };
 
   environment.systemPackages = with pkgs; [
@@ -64,6 +65,7 @@
    tor-browser
    tor
    gcc
+   unzip
    cmake
    bat
    eza
@@ -71,6 +73,9 @@
    pwvucontrol
    keepassxc
    audacious
+   iptables
+   discord
+   chromium
   ];
 
   fonts.packages = with pkgs; [
