@@ -5,3 +5,4 @@ set autoindent
 set tabsize 4
 set softwrap
 set positionlog
+set mouse
