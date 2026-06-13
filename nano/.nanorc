@@ -6,3 +6,5 @@ set tabsize 4
 set softwrap
 set positionlog
 set mouse
+syntax "all" "\.*$"
+color white,black "^.*$"
