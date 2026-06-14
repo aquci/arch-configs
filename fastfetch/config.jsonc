@@ -1,0 +1,62 @@
+{
+  "$schema": "https://github.com",
+  "logo": {
+    "source": "/home/onion/pictures/rize-white.jpg",
+    "width": 20,
+    "padding": {
+      "left": 2,
+      "right": 2
+    }
+  },
+  "display": {
+    "separator": ""
+  },
+  "modules": [
+    "break",
+    {
+      "type": "os",
+      "key": "\u001b[38;2;96;105;136m OS\u001b[38;2;112;131;163m: ",
+      "format": "\u001b[38;2;128;157;189m{4}"
+    },
+    {
+      "type": "kernel",
+      "key": "\u001b[38;2;96;105;136m Kernel\u001b[38;2;112;131;163m: ",
+      "format": "\u001b[38;2;128;157;189m{1}"
+    },
+    {
+      "type": "wm",
+      "key": "\u001b[38;2;96;105;136m WM\u001b[38;2;112;131;163m: ",
+      "format": "\u001b[38;2;128;157;189m{1}"
+    },
+    {
+      "type": "shell",
+      "key": "\u001b[38;2;96;105;136m Shell\u001b[38;2;112;131;163m: ",
+      "format": "\u001b[38;2;128;157;189m{1}"
+    },
+    {
+      "type": "terminal",
+      "key": "\u001b[38;2;96;105;136m Terminal\u001b[38;2;112;131;163m: ",
+      "format": "\u001b[38;2;128;157;189m{1}"
+    },
+    {
+      "type": "packages",
+      "key": "\u001b[38;2;96;105;136m Packages\u001b[38;2;112;131;163m: ",
+      "format": "\u001b[38;2;128;157;189m{1}"
+    },
+    {
+      "type": "cpu",
+      "key": "\u001b[38;2;96;105;136m CPU\u001b[38;2;112;131;163m: ",
+      "format": "\u001b[38;2;128;157;189mIntel Core i5-3470"
+    },
+    {
+      "type": "gpu",
+      "key": "\u001b[38;2;96;105;136m GPU\u001b[38;2;112;131;163m: ",
+      "format": "\u001b[38;2;128;157;189m{2}"
+    },
+    {
+      "type": "memory",
+      "key": "\u001b[38;2;96;105;136m Memory\u001b[38;2;112;131;163m: ",
+      "format": "\u001b[38;2;128;157;189m{2}"
+    }
+  ]
+}
