@@ -5,6 +5,11 @@
   ./hardware-configuration.nix
 ];
 
+  nix.settings.experimental-features = [
+  "nix-command"
+  "flakes"
+];
+
   networking.hostName = "onion";
   networking.networkmanager.enable = true;
   networking.firewall.enable = false;
@@ -21,6 +26,8 @@
   services.tor = { enable = true;
   client.enable = true;
   };
+
+  documentation.nixos.enable = false;
 
   hardware.graphics = {
    enable = true;
@@ -45,7 +52,13 @@
    remotePlay.openFirewall = true;
   };
 
+virtualisation.podman = {
+  enable = true;
+  dockerCompat = true;
+};
+
   environment.systemPackages = with pkgs; [
+   distrobox
    kitty
    rofi
    nemo
@@ -73,7 +86,6 @@
    pwvucontrol
    keepassxc
    audacious
-   iptables
    discord
    chromium
   ];
