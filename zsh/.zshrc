@@ -7,3 +7,5 @@ alias tree="eza --tree"
 alias n="nano"
 alias ff="fastfetch"
 alias v="nvim"
+alias mine='distrobox enter minecraft -- java -jar ~/TLauncher.jar'
+alias zap='z /home/onion/zapret-discord-youtube-linux && ./service.sh'

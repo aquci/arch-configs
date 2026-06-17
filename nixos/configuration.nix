@@ -60,6 +60,7 @@ virtualisation.podman = {
   environment.systemPackages = with pkgs; [
    distrobox
    kitty
+   iptables
    rofi
    nemo
    neovim
