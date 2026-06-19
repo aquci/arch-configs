@@ -90,6 +90,7 @@ virtualisation.podman = {
    discord
    chromium
    obsidian
+   htop
   ];
 
   fonts.packages = with pkgs; [
