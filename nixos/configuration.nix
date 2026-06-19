@@ -89,6 +89,7 @@ virtualisation.podman = {
    audacious
    discord
    chromium
+   obsidian
   ];
 
   fonts.packages = with pkgs; [
