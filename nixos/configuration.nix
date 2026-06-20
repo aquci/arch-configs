@@ -91,6 +91,7 @@ virtualisation.podman = {
    chromium
    obsidian
    htop
+   cava
   ];
 
   fonts.packages = with pkgs; [
