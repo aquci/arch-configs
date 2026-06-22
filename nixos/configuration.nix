@@ -86,6 +86,7 @@
    obsidian
    htop
    cava
+   docker
   ];
 
   fonts.packages = with pkgs; [
@@ -105,3 +106,4 @@
 
   system.stateVersion = "26.05";
  }
+
