@@ -87,6 +87,7 @@
    htop
    cava
    docker
+   cmatrix
   ];
 
   fonts.packages = with pkgs; [
