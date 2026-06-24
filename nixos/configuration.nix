@@ -78,7 +78,6 @@
    bat
    eza
    pavucontrol
-   pwvucontrol
    keepassxc
    audacious
    discord
