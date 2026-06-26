@@ -87,6 +87,7 @@
    cava
    docker
    cmatrix
+   lavat
   ];
 
   fonts.packages = with pkgs; [
