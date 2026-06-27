@@ -88,6 +88,8 @@
    docker
    cmatrix
    lavat
+   wl-clipboard
+   jq
   ];
 
   fonts.packages = with pkgs; [
