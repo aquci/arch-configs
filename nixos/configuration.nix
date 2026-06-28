@@ -62,7 +62,6 @@
    nano
    wget
    curl
-   firefox
    wbg
    fastfetch
    slurp
@@ -89,7 +88,6 @@
    cmatrix
    lavat
    wl-clipboard
-   jq
   ];
 
   fonts.packages = with pkgs; [
