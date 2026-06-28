@@ -1,31 +1,54 @@
 {
-description = "onion";
+  description = "onion";
 
-inputs = {
-nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-zen-browser = {
-url = "github:youwen5/zen-browser-flake";
-inputs.nixpkgs.follows = "nixpkgs";
-};
-};
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
-outputs = { self, nixpkgs, zen-browser, ... }:
-let
-system = "x86_64-linux";
-pkgs = nixpkgs.legacyPackages.${system};
-in {
-nixosConfigurations.onion =
-nixpkgs.lib.nixosSystem {
-inherit system;
-modules = [
-./configuration.nix
-./hardware-configuration.nix
-( { ... }: {
-environment.systemPackages = [
-zen-browser.packages.${system}.default
-];
-})
-];
-};
-};
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    zen-browser = {
+      url = "github:youwen5/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+  };
+
+  outputs = {
+    self,
+    nixpkgs,
+    home-manager,
+    zen-browser,
+    ...
+  }:
+  let
+    system = "x86_64-linux";
+  in {
+    nixosConfigurations.onion =
+      nixpkgs.lib.nixosSystem {
+        inherit system;
+
+        modules = [
+          ./configuration.nix
+          ./hardware-configuration.nix
+
+          home-manager.nixosModules.home-manager
+
+          {
+            environment.systemPackages = [
+              zen-browser.packages.${system}.default
+            ];
+
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+
+              users.onion =
+                import ./home/default.nix;
+            };
+          }
+        ];
+      };
+  };
 }
