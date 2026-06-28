@@ -78,7 +78,6 @@
    eza
    pavucontrol
    keepassxc
-   audacious
    discord
    chromium
    obsidian
