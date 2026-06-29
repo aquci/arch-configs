@@ -18,7 +18,6 @@
    zoxide
    starship
    tor-browser
-   tor
    gcc
    unzip
    cmake
