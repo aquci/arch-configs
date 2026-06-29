@@ -26,7 +26,6 @@
    pavucontrol
    keepassxc
    discord
-   chromium
    obsidian
    htop
    cava
