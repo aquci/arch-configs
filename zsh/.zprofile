@@ -1,5 +1,5 @@
 if [ -z "$WAYLAND_DISPLAY" ] && [ "$(tty)" = "/dev/tty1" ]; then
-    exec start-hyprland
+    exec Hyprland
 fi
 
 export PATH="$PATH:$HOME/.local/bin"
