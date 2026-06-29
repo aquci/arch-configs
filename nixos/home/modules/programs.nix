@@ -3,7 +3,7 @@
 {
   programs.hyprland = {
     enable = true;
-    xwayland.enable = true;
+    xwayland.enable = false;
   };
 
   programs.zsh.enable = true;
