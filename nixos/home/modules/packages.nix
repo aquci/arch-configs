@@ -1,0 +1,40 @@
+{ pkgs, ... }:
+{
+  environment.systemPackages = with pkgs; [
+   kitty
+   iptables
+   rofi
+   nemo
+   neovim
+   git
+   nano
+   wget
+   curl
+   wbg
+   fastfetch
+   slurp
+   grim
+   waybar
+   zoxide
+   starship
+   tor-browser
+   tor
+   gcc
+   unzip
+   cmake
+   bat
+   eza
+   pavucontrol
+   keepassxc
+   discord
+   chromium
+   obsidian
+   htop
+   cava
+   docker
+   cmatrix
+   lavat
+   wl-clipboard
+   jq
+  ];
+}
