@@ -6,7 +6,7 @@
 
     "modules-left": ["pulseaudio"],
     "modules-center": ["clock"],
-    "modules-right": ["memory", "cpu"],
+    "modules-right": ["custom/mem", "cpu"],
 
     "pulseaudio": {
         "format": " {volume}%",
@@ -19,11 +19,11 @@
         "format": "{:%H:%M}"
     },
 
-    "memory": {
-        "interval": 3,
-        "format": " {used:0.1f}G"
+    "custom/mem": {
+        "exec": "~/.config/waybar/mem.sh",
+        "interval": 3
     },
-
+     
     "cpu": {
         "interval": 3,
         "format": " {usage}%"

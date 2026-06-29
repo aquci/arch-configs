@@ -14,7 +14,7 @@ window#waybar {
 
 #pulseaudio,
 #clock,
-#memory,
+#mem,
 #cpu {
     background: rgba(0, 0, 0, 0);
     border-radius: 0px;
