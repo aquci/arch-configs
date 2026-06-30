@@ -10,16 +10,25 @@
   ./home/modules/networking.nix
   ./home/modules/fonts.nix
   ./home/modules/nvidia.nix
-  ./home/modules/experimental.nix
-  ./home/modules/boot.nix
-  ./home/modules/locale.nix
+];
+
+  nix.settings.experimental-features = [
+  "nix-command"
+  "flakes"
 ];
 
   nixpkgs.config.allowUnfree = true;
 
+  time.timeZone = "Europe/Moscow";
+  i18n.defaultLocale = "en_US.UTF-8";
+
+  boot.loader.grub.enable = true;
+  boot.loader.grub.device = "/dev/sda";
+
   documentation.nixos.enable = false;
+
   security.sudo.wheelNeedsPassword = true;
 
   system.stateVersion = "26.05";
- }
+}
 
