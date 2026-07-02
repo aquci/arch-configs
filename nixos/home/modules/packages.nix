@@ -2,6 +2,7 @@
 {
   environment.systemPackages = with pkgs; [
    kitty
+   xrandr
    iptables
    rofi
    nemo
