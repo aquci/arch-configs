@@ -31,7 +31,6 @@
    htop
    cava
    docker
-   cmatrix
    lavat
    wl-clipboard
    jq
