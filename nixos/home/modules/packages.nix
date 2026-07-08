@@ -34,5 +34,23 @@
    lavat
    wl-clipboard
    jq
+   obs-studio
+
+  (prismlauncher.override {
+    gamemodeSupport = true;
+    controllerSupport = true;
+
+    additionalPrograms = [
+      ffmpeg
+      gamemode
+    ];
+
+    jdks = [
+      jdk25
+      jdk21
+      jdk17
+    ];
+  })
+
   ];
 }
