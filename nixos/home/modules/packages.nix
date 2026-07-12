@@ -31,7 +31,6 @@
    htop
    cava
    docker
-   lavat
    wl-clipboard
    jq
    obs-studio
