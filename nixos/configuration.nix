@@ -20,14 +20,6 @@
   documentation.nixos.enable = false;
   security.sudo.wheelNeedsPassword = true;
 
-  services.zerotierone = {
-    enable = true;
-    joinNetworks = [
-      "8d1c312afa77efd9"
-    ];
-  };
-
-  
   services.udisks2.enable = true;
 
   environment.systemPackages = with pkgs; [
