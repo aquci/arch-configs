@@ -34,6 +34,7 @@
    wl-clipboard
    jq
    obs-studio
+   android-tools
 
   (prismlauncher.override {
     gamemodeSupport = true;
