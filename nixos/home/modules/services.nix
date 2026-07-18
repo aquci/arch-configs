@@ -6,4 +6,6 @@
 
   services.getty.autologinUser = "onion";
 
+  services.udisks2.enable = true;
+
   }

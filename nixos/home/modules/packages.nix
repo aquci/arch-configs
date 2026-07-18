@@ -35,7 +35,9 @@
    jq
    obs-studio
    android-tools
-
+   udiskie
+   usbutils
+    
   (prismlauncher.override {
     gamemodeSupport = true;
     controllerSupport = true;
