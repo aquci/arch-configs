@@ -15,18 +15,8 @@
   ./home/modules/locale.nix
 ];
 
-  nixpkgs.config.allowUnfree = true;
-
   documentation.nixos.enable = false;
   security.sudo.wheelNeedsPassword = true;
-
-  services.udisks2.enable = true;
-
-  environment.systemPackages = with pkgs; [
-    udiskie
-    usbutils
-  ];
-
 
   system.stateVersion = "26.05";
  }
