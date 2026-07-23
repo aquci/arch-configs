@@ -18,13 +18,6 @@
   documentation.nixos.enable = false;
   security.sudo.wheelNeedsPassword = true;
 
-services.zerotierone = {
-    enable = true;
-    joinNetworks = [
-      "ВАШ_NETWORK_ID"
-    ];
-  };
-
   system.stateVersion = "26.05";
  }
 
