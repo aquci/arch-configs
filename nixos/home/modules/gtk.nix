@@ -1,6 +1,7 @@
 { pkgs, ... }:
 
 {
+
   gtk = {
     enable = true;
 
@@ -38,4 +39,5 @@
 
     size = 24;
   };
+  
 }
