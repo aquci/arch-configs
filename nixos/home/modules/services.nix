@@ -1,7 +1,6 @@
 { ... }:
 
-  {
-
+{
   services.xserver.videoDrivers = [ "nvidia" ];
 
   services.getty.autologinUser = "onion";
@@ -14,5 +13,4 @@
       "8d1c312afa766930"
     ];
   };
-
-  }
+}
