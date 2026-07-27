@@ -1,7 +1,6 @@
 { pkgs, ... }:
 
 {
-
   gtk = {
     enable = true;
 
@@ -38,6 +37,5 @@
     name = "Bibata-Modern-Ice";
 
     size = 24;
-  };
-  
+  }; 
 }
