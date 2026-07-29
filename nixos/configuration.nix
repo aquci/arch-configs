@@ -15,9 +15,6 @@
   ./home/modules/locale.nix
 ];
 
-  documentation.nixos.enable = false;
   security.sudo.wheelNeedsPassword = true;
-
   system.stateVersion = "26.05";
- }
-
+}
