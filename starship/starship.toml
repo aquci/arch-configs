@@ -1,15 +1,15 @@
 add_newline = true
 
 format = """
-[ ](#809dbd)$directory
+[ ](#ffffff)$directory
 $character
 """
 
 [directory]
-style = "#809dbd"
+style = "#ffffff"
 truncation_length = 3
 truncate_to_repo = false
 
 [character]
-success_symbol = "[❯](#606988)"
+success_symbol = "[❯](#ffffff)"
 error_symbol = "[❯](red)"
