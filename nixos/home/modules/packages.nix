@@ -38,6 +38,7 @@
    android-tools
    udiskie
    usbutils
+   spotify
     
   (prismlauncher.override {
     gamemodeSupport = true;
