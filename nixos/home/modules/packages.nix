@@ -39,6 +39,8 @@
    udiskie
    usbutils
    spotify
+   localsend
+   lavat
     
   (prismlauncher.override {
     gamemodeSupport = true;
