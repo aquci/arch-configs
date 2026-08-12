@@ -40,7 +40,28 @@
       "inputs": {
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
+        "thorium": "thorium",
         "zen-browser": "zen-browser"
+      }
+    },
+    "thorium": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1778638427,
+        "narHash": "sha256-aje+PAsZBOjr437/imhIyDSIR6WoqWwMzwmnRhEgfxU=",
+        "owner": "Rishabh5321",
+        "repo": "thorium_flake",
+        "rev": "262fef20a18fecf7cd0229259ebba3083b19b908",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Rishabh5321",
+        "repo": "thorium_flake",
+        "type": "github"
       }
     },
     "zen-browser": {

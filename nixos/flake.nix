@@ -1,3 +1,4 @@
+
 {
   description = "onion";
 
@@ -13,20 +14,19 @@
       url = "github:youwen5/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    thorium = {
+      url = "github:Rishabh5321/thorium_flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = {
-    self,
-    nixpkgs,
-    home-manager,
-    zen-browser,
-    ...
-  }:
-  let
-    system = "x86_64-linux";
-  in {
-    nixosConfigurations.onion =
-      nixpkgs.lib.nixosSystem {
+  outputs = { self, nixpkgs, home-manager, zen-browser, thorium, ... }:
+    let
+      system = "x86_64-linux";
+    in
+    {
+      nixosConfigurations.onion = nixpkgs.lib.nixosSystem {
         inherit system;
 
         modules = [
@@ -38,17 +38,18 @@
           {
             environment.systemPackages = [
               zen-browser.packages.${system}.default
+              # выбери одну версию Thorium из пакетов, если там несколько
+              thorium.packages.${system}."thorium-sse4"
             ];
 
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
 
-              users.onion =
-                import ./home/default.nix;
+              users.onion = import ./home/default.nix;
             };
           }
         ];
       };
-  };
+    };
 }
