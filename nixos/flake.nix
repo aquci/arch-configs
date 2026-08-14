@@ -1,4 +1,3 @@
-
 {
   description = "onion";
 
@@ -38,7 +37,6 @@
           {
             environment.systemPackages = [
               zen-browser.packages.${system}.default
-              # выбери одну версию Thorium из пакетов, если там несколько
               thorium.packages.${system}."thorium-sse4"
             ];
 
