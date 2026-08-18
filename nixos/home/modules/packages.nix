@@ -43,6 +43,7 @@
    lavat
    krita
    cmake
+   gnumake
     
   (prismlauncher.override {
     gamemodeSupport = true;
