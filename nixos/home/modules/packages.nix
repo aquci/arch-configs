@@ -41,6 +41,8 @@
    spotify
    localsend
    lavat
+   krita
+   cmake
     
   (prismlauncher.override {
     gamemodeSupport = true;
