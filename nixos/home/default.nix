@@ -22,4 +22,7 @@
   home.packages = with pkgs; [
     home-manager
   ];
+
+  home.file.".local/share/Steam/steamapps/common/dota 2 beta/game/dota/cfg/autoexec.cfg".source =
+    ../../steam/dota2/autoexec.cfg;
 }

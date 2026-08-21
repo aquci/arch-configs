@@ -43,7 +43,6 @@
     wl-clipboard
     xrandr
     zoxide
-  ];
     
   (prismlauncher.override {
     gamemodeSupport = true;
