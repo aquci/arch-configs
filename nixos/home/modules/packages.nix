@@ -8,6 +8,7 @@
     cmake
     curl
     discord
+    distrobox
     docker
     eza
     fastfetch
@@ -34,7 +35,7 @@
     spotify
     starship
     tor-browser
-    udiskie
+    udisks2
     unzip
     usbutils
     wbg
