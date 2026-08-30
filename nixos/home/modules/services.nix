@@ -7,6 +7,8 @@
 
   services.udisks2.enable = true;
 
+  services.happ.enable = true;
+
   services.zerotierone = {
     enable = true;
     joinNetworks = [

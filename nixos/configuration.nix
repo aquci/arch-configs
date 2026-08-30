@@ -13,7 +13,17 @@
     ./home/modules/experimental.nix
     ./home/modules/boot.nix
     ./home/modules/locale.nix
+    ./happ-nixos/happ-module.nix
 ];
+
+  virtualisation.podman = {
+  enable = true;
+  dockerCompat = true;
+  };
+
+  services.udev.extraRules = ''
+    KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="feed", ATTRS{idProduct}=="0000", TAG+="uaccess", MODE="0660"
+  '';
 
   security.sudo.wheelNeedsPassword = true;
   system.stateVersion = "26.05";

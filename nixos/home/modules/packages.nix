@@ -4,6 +4,7 @@
   environment.systemPackages = with pkgs; [
     android-tools
     bat
+    chromium
     cava
     cmake
     curl
@@ -44,6 +45,7 @@
     wl-clipboard
     xrandr
     zoxide
+    vial
     
   (prismlauncher.override {
     gamemodeSupport = true;

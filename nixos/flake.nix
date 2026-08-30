@@ -18,9 +18,22 @@
       url = "github:Rishabh5321/thorium_flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    aagl = {
+      url = "github:ezKEa/aagl-gtk-on-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, home-manager, zen-browser, thorium, ... }:
+  outputs = {
+    self,
+    nixpkgs,
+    home-manager,
+    zen-browser,
+    thorium,
+    aagl,
+    ...
+  }:
     let
       system = "x86_64-linux";
     in
@@ -34,7 +47,16 @@
 
           home-manager.nixosModules.home-manager
 
+          # AAGL module
+          aagl.nixosModules.default
+
           {
+            # Cachix для готовых бинарных пакетов AAGL
+            nix.settings = aagl.nixConfig;
+
+            # ВКЛЮЧАЕМ ТОЛЬКО GENSHIN LAUNCHER
+            programs.anime-game-launcher.enable = true;
+
             environment.systemPackages = [
               zen-browser.packages.${system}.default
               thorium.packages.${system}."thorium-sse4"
