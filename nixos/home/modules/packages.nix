@@ -4,8 +4,8 @@
   environment.systemPackages = with pkgs; [
     android-tools
     bat
-    chromium
     cava
+    chromium
     cmake
     curl
     discord
@@ -28,26 +28,27 @@
     nano
     nemo
     neovim
-    obs-studio
     obsidian
+    obs-studio
     pavucontrol
     rofi
     slurp
     spotify
     starship
+    telegram-desktop
     tor-browser
     udisks2
     unzip
     usbutils
+    vial
     wbg
     waybar
     wget
     wl-clipboard
     xrandr
     zoxide
-    vial
-    
-  (prismlauncher.override {
+
+      (prismlauncher.override {
     gamemodeSupport = true;
     controllerSupport = true;
 
@@ -62,6 +63,6 @@
       jdk17
     ];
   })
-
   ];
 }
+
